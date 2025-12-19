@@ -1,6 +1,6 @@
 # Margaid fork
 
-Please see the [original project](https://pkg.go.dev/github.com/erkkah/margaid).
+Please see the [original project](https://github.com/erkkah/margaid).
 
 This fork just has some hacks that I needed:
 
