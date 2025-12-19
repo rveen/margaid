@@ -309,6 +309,10 @@ func (m *Margaid) Render(writer io.Writer) error {
 	return err
 }
 
+func (m *Margaid) String() string {
+	return m.g.Render()
+}
+
 // Projects a value onto an axis using the current projection
 // setting.
 // The value returned is in user coordinates, [0..1] * width for the x-axis.

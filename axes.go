@@ -35,6 +35,9 @@ func (m *Margaid) Axis(series *Series, axis Axis, ticker Ticker, grid bool, titl
 	var axisLabelAlignment svg.VAlignment
 	var axisLabelSign float64 = 1
 
+	xoff := 0.0
+	yoff := 0.0
+
 	max := m.ranges[axis].max
 
 	xAttributes := func() {
@@ -61,6 +64,7 @@ func (m *Margaid) Axis(series *Series, axis Axis, ticker Ticker, grid bool, titl
 		vAlignment = svg.VAlignTop
 		axisLabelAlignment = svg.VAlignBottom
 		axisLabelSign = -1
+		yoff = 40
 	case X2Axis:
 		xAttributes()
 		vAlignment = svg.VAlignBottom
@@ -70,6 +74,7 @@ func (m *Margaid) Axis(series *Series, axis Axis, ticker Ticker, grid bool, titl
 		tickSign = -1
 		hAlignment = svg.HAlignEnd
 		axisLabelAlignment = svg.VAlignTop
+		xoff = -60
 	case Y2Axis:
 		yAttributes()
 		xOffset = m.width - m.inset
@@ -131,7 +136,7 @@ func (m *Margaid) Axis(series *Series, axis Axis, ticker Ticker, grid bool, titl
 
 	if title != "" {
 		m.g.Transform(
-			svg.Translation(xOffset, yOffset),
+			svg.Translation(xOffset+xoff, yOffset+yoff),
 			svg.Scaling(1, 1),
 			svg.Rotation(axisLabelRotation, 0, 0),
 		).
