@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	br "github.com/erkkah/margaid/brackets"
+	br "github.com/rveen/margaid/brackets"
 )
 
 // SVG builds SVG format images using a small subset of the standard

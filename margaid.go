@@ -5,8 +5,8 @@ import (
 	"io"
 	"math"
 
-	"github.com/erkkah/margaid/brackets"
-	"github.com/erkkah/margaid/svg"
+	"github.com/rveen/margaid/brackets"
+	"github.com/rveen/margaid/svg"
 )
 
 // Margaid == diagraM

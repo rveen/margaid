@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/erkkah/margaid/svg"
+	"github.com/rveen/margaid/svg"
 )
 
 // Ticker provides tick marks and labels for axes

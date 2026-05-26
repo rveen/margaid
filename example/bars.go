@@ -7,7 +7,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/erkkah/margaid"
+	"github.com/rveen/margaid"
 )
 
 func main() {

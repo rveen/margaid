@@ -3,7 +3,7 @@ package margaid
 import (
 	"fmt"
 
-	"github.com/erkkah/margaid/svg"
+	"github.com/rveen/margaid/svg"
 )
 
 // Axis is the type for all axis constants

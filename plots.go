@@ -5,7 +5,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/erkkah/margaid/svg"
+	"github.com/rveen/margaid/svg"
 )
 
 type plotOptions struct {

@@ -1,3 +1,3 @@
-module github.com/erkkah/margaid
+module github.com/rveen/margaid
 
 go 1.13

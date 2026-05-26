@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	m "github.com/erkkah/margaid"
+	m "github.com/rveen/margaid"
 )
 
 func main() {

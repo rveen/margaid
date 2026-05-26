@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/erkkah/margaid/xt"
+	"github.com/rveen/margaid/xt"
 )
 
 func TestTimeTickerStart(t *testing.T) {

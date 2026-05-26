@@ -3,7 +3,7 @@ package brackets
 import (
 	"testing"
 
-	"github.com/erkkah/margaid/xt"
+	"github.com/rveen/margaid/xt"
 )
 
 func TestBracketConstruction(t *testing.T) {
